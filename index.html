@@ -12,15 +12,73 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
+	<style>
+		.dropbtn {
+			background-color: transparent;
+			color: white;
+			font-size: 16px;
+			border: none;
+			padding-bottom: 0.5em;
+		}
+
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			min-width: 160px;
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			color: white;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+
+		.dropdown-content a:hover {
+			background-color: rgb(124, 121, 121);
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		
+	</style>
+
 </head>
 
 <body>
 
 	<header>
-		<!-- <h2><a href="#">Website Logo</a></h2> -->
+		<!-- <nav>
+			<li><a href="#">Home</a></li>
+			<div class="dropdown">
+				<button class="dropbtn">Posts</button>
+				<div class="dropdown-content">
+					<a href="/posts/latest/july26-2022.html">Latest</a>
+					<a href="/posts/older/example.html">Recent</a>
+				</div>
+			</div>
+		</nav> -->
 		<nav>
 			<li><a href="#">Home</a></li>
-			<li><a href="/posts/latest/july26-2022.html">Posts</a></li>
+			<li class="dropdown">
+				<button class="dropbtn">Posts</button>
+				<div class="dropdown-content">
+					<div>
+						<a href="/posts/latest/july27-2022.html">Latest</a>
+						<a href="/posts/older/older.html">Older</a>
+					</div>
+				</div>
+				
+				<!-- <a href="/posts/latest/july26-2022.html">Posts</a> -->
+			</li>
 		</nav>
 	</header>
 
