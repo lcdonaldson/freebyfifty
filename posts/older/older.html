@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,600,700,800' rel='stylesheet'
+            type='text/css'>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <style>
+            body { background-color: #f7f7f7; }
+            h1 { 
+                text-align: center; 
+                margin-bottom: 2em;
+                font-size: 32pt;
+            }
+            h2 {font-family: 'Lobster'; padding: 0.5em 0}
+            .page-wrapper {
+                padding-top: 5em;
+            }
+            .grid-wrapper {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-gap: 2.5em;
+                min-height: 300px;
+            }
+            .grid-wrapper > * {
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                max-width: 18em;
+                max-height: 18em;
+                border-radius: 5px;
+            }
+            img { border-radius: 5px 5px 0 0; }
+            .container { 
+                padding: 0.5em 2em;
+                text-align: center;
+            }
+            
+            .card:hover { box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); }
+            p { font-size: 10pt;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <li><a href="/index.html" style="color:rgb(85, 85, 85);">Home</a></li>
+            </nav>
+        </header>
+
+        <div class="page-wrapper">
+            <h1>Recent Posts</h1>
+
+            <div class="grid-wrapper">
+
+                <div class="card">
+                    <a href="/posts/older/july26-2022.html">
+                        <img src="/assets/img/island.jpg" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h2><b>Hello World</b></h2>
+                            <p><em>July 26th 2022</em></p>
+                        </div>
+                    </a>
+                </div>
+            
+                <!-- <div class="card">
+                    <img src="/assets/img/balloon.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>What now</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="/assets/img/island.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Island</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </body>
+</html>
